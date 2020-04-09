@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-react
+  labels:
+    app: hello-react
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-react
+  template:
+    metadata:
+      labels:
+        app: hello-react
+    spec:
+      containers:
+      - name: hello-react
+        image: 192.168.1.103:5000/developer/hello-react:latest
+        ports:
+        - containerPort: 8081
+          name: http
+        env:
+        - name: RELEASE
+          value: "Hello react - latest"
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 8081
+          initialDelaySeconds: 5
+          timeoutSeconds: 2
+          periodSeconds: 15
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8081
+          initialDelaySeconds: 10
+          timeoutSeconds: 2
+          periodSeconds: 15
