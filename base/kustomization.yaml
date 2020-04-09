@@ -3,3 +3,4 @@ resources:
     - service.yaml
     - namespace.yaml
     - react-config.yaml
+    - route.yaml
