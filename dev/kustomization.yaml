@@ -1,12 +1,14 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-bases:
-- ../base
 
 patchesStrategicMerge:
 - ./deployment-patch.yaml
 
 images:
-- name: 	172.30.1.1:5000/dev/hello-react
+- name: 172.30.1.1:5000/dev/hello-react
   newTag: latest
+- name: dev/hello-react
+  newTag: be992848a4af483a6e7b9aed15bec40a537b3403
+resources:
+- ../base
