@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hello-react
 spec:
-  replicas: 1
+  replicas: 5
   revisionHistoryLimit: 3
   progressDeadlineSeconds: 30
   selector:
