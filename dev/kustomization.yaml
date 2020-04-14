@@ -6,8 +6,6 @@ patchesStrategicMerge:
 - ./deployment-patch.yaml
 
 images:
-- name: 172.30.1.1:5000/dev/hello-react
-  newTag: latest
 - name: dev/hello-react
   newTag: 82bebf522b1490011254121ae62c324de0ac9009
 resources:
