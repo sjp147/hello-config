@@ -7,6 +7,6 @@ patchesStrategicMerge:
 
 images:
 - name: dev/hello-react
-  newTag: 82bebf522b1490011254121ae62c324de0ac9009
+  newTag: 960c79f98b95433013834195170561b44294dc3a
 resources:
 - ../base
