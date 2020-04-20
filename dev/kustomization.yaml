@@ -4,5 +4,9 @@ kind: Kustomization
 resources:
 - ../base
 
+images:
+    - name: 172.30.1.1:5000/dev/hello-react
+      newTag: latest-dev
+
 patchesStrategicMerge:
 - ./deployment-patch.yaml
