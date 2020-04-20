@@ -15,7 +15,7 @@ spec:
         app: hello-react
     spec:
       containers:
-      - image: 	172.30.1.1:5000/dev/hello-react:latest
+      - image: 172.30.1.1:5000/dev/hello-react:latest
         name: hello-react
         ports:
         - containerPort: 8081

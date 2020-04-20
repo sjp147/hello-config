@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
       - name: hello-react
-        image: 	172.30.1.1:5000/dev/hello-react:latest-test
+        image: 172.30.1.1:5000/dev/hello-react:latest-test
         env:
         - name: ENVIRONMENT
           value: test
