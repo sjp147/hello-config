@@ -1,12 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-react
+  name: hello-react-test
 spec:
   template:
     spec:
       containers:
       - name: hello-react
+      - image: 	172.30.1.1:5000/dev/hello-react:latest-test
         env:
         - name: ENVIRONMENT
-          value: stage
+          value: test
