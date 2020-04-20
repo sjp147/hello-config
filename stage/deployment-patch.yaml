@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
       - name: hello-react
-      - image: 	172.30.1.1:5000/dev/hello-react:latest-stage
+        image: 172.30.1.1:5000/dev/hello-react:latest-stage
         env:
         - name: ENVIRONMENT
           value: stage
