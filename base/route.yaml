@@ -3,7 +3,7 @@ kind: Route
 metadata:	
   labels:	
     app.kubernetes.io/instance: hello-react-dev	
-  name: hello-react
+  name: hello-react-dev
 spec:	
   host: hello-react-dev.192.168.64.7.nip.io	
   tls:	
