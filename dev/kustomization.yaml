@@ -10,3 +10,4 @@ images:
 
 patchesStrategicMerge:
     - ./deployment-patch.yaml
+    - ./route-patch.yaml

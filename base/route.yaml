@@ -2,15 +2,15 @@ apiVersion: route.openshift.io/v1
 kind: Route	
 metadata:	
   labels:	
-    app.kubernetes.io/instance: hello-react-dev	
+    app.kubernetes.io/instance: hello-react
   name: hello-react
 spec:	
-  host: hello-react-dev.192.168.64.7.nip.io	
+  host: hello-react.192.168.64.7.nip.io	
   tls:	
     insecureEdgeTerminationPolicy: Redirect	
     termination: edge	
   to:	
     kind: Service	
-    name: hello-react-dev
+    name: hello-react
     weight: 100	
   wildcardPolicy: None	

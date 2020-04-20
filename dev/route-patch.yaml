@@ -1,0 +1,8 @@
+apiVersion: route.openshift.io/v1	
+kind: Route
+metadata:
+  name: hello-react
+spec:	
+  host: hello-react-dev.192.168.64.7.nip.io	
+  to:
+    name: hello-react-dev
